@@ -5,7 +5,7 @@ edad = 32
 ciudad = "Medellin"
 estatura = 1.78
 estudio_python = True
-print(f"Hola mi nombre es {nombre}, tengo {edad} años y vivo en {ciudad} y amo PY {"SI" if estudio_python else "NO"}")
+print(f"Hola mi nombre es {nombre}, tengo {edad} años y vivo en {ciudad} y amo PY {'SI' if estudio_python else 'NO'}")
 
 ########################## 2
 
@@ -59,8 +59,9 @@ print(f"El total a pagar es de {float(precio) * int(cantidad)}")
 
 nom = "Mario"
 apellido = "Medina Volkmar"
+nombre_completo = f"{nom} {apellido}"
 
-print(f"Mi nombre completo es {nom + " " + apellido}")
+print(f"Mi nombre completo es {nombre_completo}")
 
 
 

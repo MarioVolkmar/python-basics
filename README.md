@@ -25,14 +25,12 @@ Here I will document my progress while practicing core programming concepts, wri
 
 ## Repository structure
 
-```text
 python-basics/
 │
 ├── exercises/   # Practice exercises organized by topic
 ├── notes/       # Personal notes and explanations
 ├── projects/    # Small Python projects
 └── README.md
-```
 
 ## Learning goals
 
