@@ -27,9 +27,19 @@ Here I will document my progress while practicing core programming concepts, wri
 
 python-basics/
 │
-├── exercises/   # Practice exercises organized by topic
-├── notes/       # Personal notes and explanations
-├── projects/    # Small Python projects
+├── 01_variables_and_types/
+│   └── exercises.py
+│
+├── 02_conditionals/
+│   └── exercises.py
+│
+├── 03_loops/
+│   └── exercises.py
+│
+├── 04_mixed_exercises/
+│   └── exercises.py
+│
+├── weekly_log.md
 └── README.md
 
 ## Learning goals
