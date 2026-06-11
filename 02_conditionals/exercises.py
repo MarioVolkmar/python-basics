@@ -89,9 +89,9 @@ elif dia_semana == 7:
 
 ## Calculadora Basica
 
-num_a = float(input("Ingrese el primer numero"))
-num_b = float(input("Ingrese el segundo numero"))
-operacion = input("Ingrese una se las siguientes operaciones -> suma - resta - multiplicar - dividir")
+num_a = float(input("Ingrese el primer numero "))
+num_b = float(input("Ingrese el segundo numero "))
+operacion = input("Ingrese una se las siguientes operaciones -> suma - resta - multiplicar - dividir ")
 
 if operacion.lower() == "suma":
     print(f"El resultado es: {num_a + num_b}")
@@ -134,3 +134,114 @@ elif semaforo.lower() == "rojo":
     print("Detenerse")
 else:
     print("Color invalido")
+
+## Login básico
+
+usuario = "mario"
+password = "1234"
+
+print("Acceso concedido ") if usuario == "mario" and password == "1234" else print("Acceso denegado")
+
+## Acceso con rol
+
+usuario_activo = True
+rol = "admin"
+
+if usuario_activo and rol == "admin" :
+    print("Puede ingresar al panel")
+elif usuario_activo :
+    print("Acceso Limitado")
+elif not usuario_activo :
+    print("Usuario Inactivo")
+
+## Descuento por compra
+
+compra = 25000
+cliente_frecuente = True
+
+if cliente_frecuente and compra >= 20000:
+    print("Tiene descuento")
+else:
+    print("No tiene descuento")
+
+## Validar rango de nota
+
+nota = 5
+
+if nota >= 0 and nota <= 5:
+    print("Nota valida")
+else:
+    print("Nota invalida")
+
+## Puede conducir
+
+edad = 20
+tiene_licencia = True
+
+if tiene_licencia and edad >= 18:
+    print("Puede conducir")
+elif edad >= 18 :
+    print("Necesitas la licencia de conduccion")
+else:
+    print("No puedes conducir siendo menor de edad")
+
+## Validación de contraseña
+
+password = "python123"
+
+if len(password) >= 8:
+    print("Contraseña Valida")
+else:
+    print("Contraseña demasiado corta")
+
+## Evaluar salario
+
+salario = 400000
+
+if salario < 130000:
+    print("Salario bajo")
+elif salario >= 130000 and salario < 3000000:
+    print("Salario Medio")
+else:
+    print("Salario Alto")
+
+## Sistema de envío
+
+total_compra = 120000
+ciudad = "Medellin"
+
+if total_compra >= 10000 and ciudad == "Medellin":
+    print("Envio Gratis")
+elif total_compra >= 10000:
+    print("Envio con descuento")
+else :
+    print("Envio normal")
+
+## Nivel de programador
+
+horas_estudio = 80
+
+if horas_estudio < 50:
+    print("Principiante inicial")
+elif horas_estudio >= 50 and horas_estudio <= 200:
+    print("Principiante en progreso")
+elif horas_estudio > 200 and horas_estudio <= 500:
+    print("Nivel Basico")
+else:
+    print("Nivel Intermedio")
+
+## Evaluador de perfil backend junior
+
+sabe_python = True
+sabe_sql = False
+sabe_git = True
+horas_estudio = 40
+
+if sabe_python and sabe_git and horas_estudio >= 40 :
+    print("Buen inicio")
+elif sabe_python and not sabe_git:
+    print("Debe mejorar git")
+elif not sabe_python:
+    print("Debe aprender python")
+elif sabe_python and sabe_git and horas_estudio < 40:
+    print("Debe practicar mas")
