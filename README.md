@@ -1,30 +1,31 @@
 # Python Basics
 
-Python fundamentals practice repository with exercises, notes, and small projects focused on backend development.
+This repository contains basic Python practice exercises focused on programming fundamentals.
 
-## About this repository
+The goal of this repository is to strengthen my understanding of Python syntax, control flow, loops, lists, strings, and basic problem solving.
 
-This repository is part of my learning path to become a Backend Developer.
-The goal is to build a strong foundation in Python through consistent practice, problem-solving exercises, and small projects.
+---
 
-Here I will document my progress while practicing core programming concepts, writing clean code, and preparing for backend development with Python.
+## Topics Covered
 
-## Current focus
-
-* Python syntax and fundamentals
 * Variables and data types
+* Type conversion
+* Arithmetic operations
+* String methods
 * Conditionals
-* Loops
-* Functions
-* Lists, tuples, dictionaries, and sets
-* String manipulation
-* File handling
-* Error handling
-* Basic problem solving
-* Clean and readable code
+* Logical operators
+* `for` loops
+* `while` loops
+* Lists
+* Counters and accumulators
+* Basic input handling
+* Simple validations
 
-## Repository structure
+---
 
+## Repository Structure
+
+```text
 python-basics/
 │
 ├── 01_variables_and_types/
@@ -39,30 +40,40 @@ python-basics/
 ├── 04_mixed_exercises/
 │   └── exercises.py
 │
-├── weekly_log.md
 └── README.md
+```
 
-## Learning goals
+---
 
-The main goals of this repository are:
+## Completed Sections
 
-* Practice Python consistently
-* Improve problem-solving skills
-* Build a solid programming foundation
-* Learn how to structure code properly
-* Develop habits for writing readable and maintainable code
-* Prepare for backend development with Python, APIs, databases, and automation
+| Section                  | Description                                                                 |
+| ------------------------ | --------------------------------------------------------------------------- |
+| `01_variables_and_types` | Basic variables, data types, conversions, and formatting                    |
+| `02_conditionals`        | Conditional logic using `if`, `elif`, `else`, and logical operators         |
+| `03_loops`               | Practice with `for`, `while`, counters, accumulators, and iterations        |
+| `04_mixed_exercises`     | Combined exercises using variables, conditionals, loops, lists, and strings |
 
-## Technologies
+---
 
-* Python
-* Git
-* GitHub
+## Purpose
 
-## Progress
+This repository is part of my programming practice while building stronger Python fundamentals.
 
-This repository will be updated regularly as I continue learning and practicing new concepts.
+The focus is not on advanced projects yet, but on developing good problem-solving habits and becoming more comfortable writing Python code from scratch.
 
-## Long-term goal
+---
 
-My long-term goal is to become a Junior Backend Developer, building practical projects using Python, SQL, APIs, and AI-powered tools.
+## Next Steps
+
+The next practice areas will include:
+
+* More list exercises
+* Dictionaries
+* Tuples
+* Sets
+* String manipulation
+* Functions
+* Small Python mini-projects
+
+
