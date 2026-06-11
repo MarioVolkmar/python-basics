@@ -159,7 +159,7 @@ elif not usuario_activo :
 compra = 25000
 cliente_frecuente = True
 
-if cliente_frecuente and compra >= 20000:
+if cliente_frecuente or compra >= 20000:
     print("Tiene descuento")
 else:
     print("No tiene descuento")
