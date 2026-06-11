@@ -41,7 +41,7 @@ cantidad_vocales = 0
 cantidad_consonantes = 0
 
 for letra in texto:
-    if letra in vocales:
+    if letra.lower() in vocales:
         cantidad_vocales += 1
     elif letra != " ":
         cantidad_consonantes += 1
@@ -105,6 +105,7 @@ while intentos < 3 :
     password = input("Ingrese la clave ")
     if usuario == usuario_correcto and password == password_correcta:
         print("Acceso Permitido")
+        break
     else:
         print("Clave o usuario equivocado")
 else:
@@ -190,7 +191,7 @@ positivos = []
 negativos = []
 
 for n in numeros:
-    if n >= 0 :
+    if n > 0 :
         positivos.append(n)
     else:
         negativos.append(n)
@@ -206,7 +207,7 @@ impares = []
 
 for n in numeros:
     if n % 2 == 0 :
-        suma_pares.append(n)
+        pares.append(n)
     else:
         impares.append(n)
 
@@ -254,7 +255,7 @@ total = 0
 for p in precios:
     total += p
 
-if total >= 10000 :
+if total >= 100000 :
     descuento = total * 10 / 100
     print(f"Total sin descuento: {total} - Descuento: {descuento} \nTotal a pagar {total - descuento}")
 else:
