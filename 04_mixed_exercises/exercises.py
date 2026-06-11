@@ -160,4 +160,156 @@ frase_dividida = frase.split(" ")
 
 print(f"La frase tiene un total de {len(frase_dividida)} palabras")
 
+## Buscar una palabra
 
+frase = "Python es excelente para backend"
+palabra_buscada = "backend"
+
+print("Palabra encontrada") if palabra_buscada in frase else print("Palabra no encontrada")
+
+frase_auxiliar = frase.split()
+palabra_encontrada = False
+
+for f in frase_auxiliar:
+    if f == palabra_buscada:
+        palabra_encontrada = True
+else: 
+    print(palabra_encontrada)
+    
+## Limpieza básica de texto
+
+texto = "   Python Backend   "
+
+print(f"Texto Inicial: {texto} \nTexto Limpio: {texto.strip()} \nTexto Mayuscula: {texto.upper()} \nTexto miniscula: {texto.lower()}")
+
+##  Separar números positivos y negativos
+
+numeros = [4, -2, 7, -9, 0, 12, -1, 5]
+
+positivos = []
+negativos = []
+
+for n in numeros:
+    if n >= 0 :
+        positivos.append(n)
+    else:
+        negativos.append(n)
+
+print(positivos, negativos)
+
+## Separar pares e impares
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+pares = []
+impares = []
+
+for n in numeros:
+    if n % 2 == 0 :
+        suma_pares.append(n)
+    else:
+        impares.append(n)
+
+print(pares, impares)
+
+## Sistema de ahorro con meta
+
+meta = 200000
+ahorro = 0
+
+while ahorro < meta:
+    ingreso = 0
+    while ingreso <= 0 :
+        ingreso = float(input("Ingrese un monto a ahorrar que sea mayor que cero"))
+    ahorro += ingreso
+
+print(f"Meta de ahorro alcanzada - Valor ahorrado {ahorro}")
+
+## Clasificador de edades en lista
+
+edades = [8, 15, 22, 34, 67, 3, 45, 90]
+niños = 0
+adolecentes = 0
+adultos = 0 
+adultos_mayores = 0
+
+for e in edades:
+    if e >= 0 and e <= 12:
+        niños += 1
+    elif e > 12 and e <= 17:
+        adolecentes += 1
+    elif e > 17 and e <= 59:
+        adultos += 1
+    elif e > 59:
+        adultos_mayores += 1
+
+print(f"Niños: {niños} \nAdolecentes: {adolecentes} \nAdultos: {adultos} \nAdultos Mayores: {adultos_mayores}")
+
+## Carrito de compras simple
+
+precios = [12000, 35000, 18000, 50000]
+
+total = 0
+
+for p in precios:
+    total += p
+
+if total >= 10000 :
+    descuento = total * 10 / 100
+    print(f"Total sin descuento: {total} - Descuento: {descuento} \nTotal a pagar {total - descuento}")
+else:
+    print(f"No tienes descuento, el total a pagar es de {total}")
+
+## Detector de caracteres
+
+texto = "Python 3.12 es genial!"
+
+letras = "qwertyuiopasdfghjklñzxcvbnm"
+numeros = "0123456789"
+
+cantidad_letras = 0
+cantidad_numeros = 0
+cantidad_espacios = 0
+cantidad_simbolos = 0
+
+for t in texto :
+    if t.lower() in letras :
+        cantidad_letras += 1
+    elif t in numeros :
+        cantidad_numeros += 1
+    elif t == " ":
+        cantidad_espacios += 1
+    else:
+        cantidad_simbolos += 1
+
+print(f"Letras: {cantidad_letras} - Numeros: {cantidad_numeros} - Espacios: {cantidad_espacios} - Simbolos: {cantidad_simbolos} ")
+
+## Menú de tareas
+
+tareas = []
+
+while True:
+    solicitud = input("Ingrese: '1' Agregar Tareas - '2' Ver tareas - '3' Eliminar ultima tarea - '4' Salir ")
+    if solicitud == "1":
+        tarea = input("Ingresa la nueva tarea ")
+        tareas.append(tarea)
+    elif solicitud == "2":
+        print(tareas)
+    elif solicitud == "3":
+        if len(tareas) > 0:
+            tareas.pop()
+    elif solicitud == "4":
+        break
+    else:
+        print("Opcion invalida")
+
+## Mini evaluación de perfil backend
+
+horas_python = 40
+horas_sql = 10
+horas_git = 8
+proyectos = 1
+
+horas_totales = horas_python + horas_sql + horas_git
+
+print(f"Horas totales: {horas_totales} - Buen progreso inicial") if horas_totales >= 50 and proyectos >= 1 else print(f"Horas totales: {horas_totales} - Necesitas construir proyectos ")  if horas_totales >= 50 and proyectos <= 0 else print(f"Horas totales: {horas_totales} -Necesitas mas practica")
