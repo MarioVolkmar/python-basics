@@ -4,9 +4,9 @@
 
 ## June 10, 2026
 
-Hours studied: 3
-Exercises completed: 10
-Commits created: 3
+Hours studied: 4
+Exercises completed: 20
+Commits created: 5
 
 ### What I practiced
 - Variables
